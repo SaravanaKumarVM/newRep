@@ -1,0 +1,145 @@
+#no of cus frm each country
+
+	SELECT count(CustomerID),Country from Customers group by Country
+
+#no of cus each city nd country
+
+	select count(a.CustomerID),a.Country,count(b.CustomerID),b.city from Customers a join Customers b on a.CustomerID = B.CustomerID group by a.Country, b.City 
+
+#list of cus who have placed orders in 1997
+
+	SELECT * FROM Customers c join Orders o on c.CustomerID = o.CustomerID where o.OrderDate between '1997-01-01' and '1997-12-31'
+
+#list of top 5 products for which orders have been placed
+
+	SELECT * FROM Products p join orderDetails o on p.ProductID = o.ProductID order by o.Quantity desc limit 5
+
+#catagories to be listed by the no of orders(which catagory have more order)
+
+	SELECT c.CategoryID,c.CategoryName,count(p.ProductID) "No Of Product" from Categories c join Products p on c.CategoryID = p.CategoryID group by c.CategoryID order by count(p.ProductID) desc
+
+#demo various type of joints with eg
+
+	inner join - select count(a.CustomerID),a.Country,count(b.CustomerID),b.city from Customers a join Customers b on a.CustomerID = B.CustomerID group by a.Country, b.City 
+
+	Outer Join - shows the details which will not satisfy the on condition
+
+	left join - shows all details of left irrespective of on condition and right with respect of on condition
+	SELECT o.OrderID, o.CustomerID,e.FirstName,e.LastName FROM Employees e left join Orders o on o.EmployeeID = e.EmployeeID 
+
+	right join - shows all details of right irrespective of on condition and left with respect of on condition
+
+
+
+
+# CTE
+# SQL UNION
+# SQL LI#no of cus frm each country
+
+	SELECT count(CustomerID),Country from Customers group by Country
+
+#no of cus each city nd country
+
+	select count(a.CustomerID),a.Country,count(b.CustomerID),b.city from Customers a join Customers b on a.CustomerID = B.CustomerID group by a.Country, b.City 
+
+#list of cus who have placed orders in 1997
+
+	SELECT * FROM Customers c join Orders o on c.CustomerID = o.CustomerID where o.OrderDate between '1997-01-01' and '1997-12-31'
+
+#list of top 5 products for which orders have been placed
+
+	SELECT * FROM Products p join orderDetails o on p.ProductID = o.ProductID order by o.Quantity desc limit 5
+
+#catagories to be listed by the no of orders(which catagory have more order)
+
+	SELECT c.CategoryID,c.CategoryName,count(p.ProductID) "No Of Product" from Categories c join Products p on c.CategoryID = p.CategoryID group by c.CategoryID order by count(p.ProductID) desc
+
+#demo various type of joints with eg
+
+	inner join - select count(a.CustomerID),a.Country,count(b.CustomerID),b.city from Customers a join Customers b on a.CustomerID = B.CustomerID group by a.Country, b.City 
+
+	Outer Join - shows the details which will not satisfy the on condition
+
+	left join - shows all details of left irrespective of on condition and right with respect of on condition
+	SELECT o.OrderID, o.CustomerID,e.FirstName,e.LastName FROM Employees e left join Orders o on o.EmployeeID = e.EmployeeID 
+
+	right join - shows all details of right irrespective of on condition and left with respect of on condition
+
+
+
+
+# CTE
+# SQL UNION
+# SQL LI#no of cus frm each country
+
+	SELECT count(CustomerID),Country from Customers group by Country
+
+#no of cus each city nd country
+
+	select count(a.CustomerID),a.Country,count(b.CustomerID),b.city from Customers a join Customers b on a.CustomerID = B.CustomerID group by a.Country, b.City 
+
+#list of cus who have placed orders in 1997
+
+	SELECT * FROM Customers c join Orders o on c.CustomerID = o.CustomerID where o.OrderDate between '1997-01-01' and '1997-12-31'
+
+#list of top 5 products for which orders have been placed
+
+	SELECT * FROM Products p join orderDetails o on p.ProductID = o.ProductID order by o.Quantity desc limit 5
+
+#catagories to be listed by the no of orders(which catagory have more order)
+
+	SELECT c.CategoryID,c.CategoryName,count(p.ProductID) "No Of Product" from Categories c join Products p on c.CategoryID = p.CategoryID group by c.CategoryID order by count(p.ProductID) desc
+
+#demo various type of joints with eg
+
+	inner join - select count(a.CustomerID),a.Country,count(b.CustomerID),b.city from Customers a join Customers b on a.CustomerID = B.CustomerID group by a.Country, b.City 
+
+	Outer Join - shows the details which will not satisfy the on condition
+
+	left join - shows all details of left irrespective of on condition and right with respect of on condition
+	SELECT o.OrderID, o.CustomerID,e.FirstName,e.LastName FROM Employees e left join Orders o on o.EmployeeID = e.EmployeeID 
+
+	right join - shows all details of right irrespective of on condition and left with respect of on condition
+
+
+
+
+# CTE
+# SQL UNION
+# SQL LI#no of cus frm each country
+
+	SELECT count(CustomerID),Country from Customers group by Country
+
+#no of cus each city nd country
+
+	select count(a.CustomerID),a.Country,count(b.CustomerID),b.city from Customers a join Customers b on a.CustomerID = B.CustomerID group by a.Country, b.City 
+
+#list of cus who have placed orders in 1997
+
+	SELECT * FROM Customers c join Orders o on c.CustomerID = o.CustomerID where o.OrderDate between '1997-01-01' and '1997-12-31'
+
+#list of top 5 products for which orders have been placed
+
+	SELECT * FROM Products p join orderDetails o on p.ProductID = o.ProductID order by o.Quantity desc limit 5
+
+#catagories to be listed by the no of orders(which catagory have more order)
+
+	SELECT c.CategoryID,c.CategoryName,count(p.ProductID) "No Of Product" from Categories c join Products p on c.CategoryID = p.CategoryID group by c.CategoryID order by count(p.ProductID) desc
+
+#demo various type of joints with eg
+
+	inner join - select count(a.CustomerID),a.Country,count(b.CustomerID),b.city from Customers a join Customers b on a.CustomerID = B.CustomerID group by a.Country, b.City 
+
+	Outer Join - shows the details which will not satisfy the on condition
+
+	left join - shows all details of left irrespective of on condition and right with respect of on condition
+	SELECT o.OrderID, o.CustomerID,e.FirstName,e.LastName FROM Employees e left join Orders o on o.EmployeeID = e.EmployeeID 
+
+	right join - shows all details of right irrespective of on condition and left with respect of on condition
+
+
+
+
+# CTE
+# SQL UNION
+# SQL LI
